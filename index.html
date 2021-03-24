@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Memory Game</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body onload="initialize()">
+    <audio id="wrongAns" src="https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2FWrongSound.mp3?v=1616459738202"></audio>
+    
+    <div id="headerText" class="centerText">
+      <h1>Light and Sound Memory Game</h1>
+
+      <p>
+        Repeat the pattern back to win the game!
+      </p>
+    </div>
+    
+    <br>
+      
+      <div class="centerSettings">
+        <div id="settingsPanel" class="" style="">
+          <div class="settingRow">
+            <label id="gameModeLabel" for="gameMode">Game Mode</label>
+            <select id="gameMode" class="controlPanel" onchange="setMode(this.value)">
+              <option value="1">Normal</option>
+              <option value="2">Endless</option>
+              <option value="3">Rhythm</option>
+            </select>
+          </div>
+
+          <div class="settingRow">
+            <label id="numButtonsLabel" for="numButtons">Buttons</label>
+            <select id="numButtons" class="controlPanel" onchange="setButtons(this.value)">
+              <option value="4">4</option>
+              <option value="9">9</option>
+              <option value="16">16</option>
+            </select>
+
+            <label id="numRoundsLabel" for="numRounds">Rounds</label>
+            <select id="numRounds" class="controlPanel" onchange="setRounds(this.value)">
+              <option value="4">4</option>
+              <option value="6">6</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
+            </select>
+
+            <label id="speedLabel" for="speed">Speed</label>
+            <select id="speed" class="controlPanel" onchange="setSpeed(this.value)">
+              <option value="1">1x</option>
+              <option value="2">2x</option>
+              <option value="3">3x</option>
+            </select>
+
+            <label id="livesLabel" for="lives">Lives</label>
+            <select id="lives" class="controlPanel" onchange="setStrikes(this.value)">
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+
+            <label id="accelerateLabel" for="accelerate">Speed up</label>
+            <input type="checkbox" id="accelerate" class="controlPanel">
+
+            <label id="shuffleLabel" for="shuffle">Shuffle</label>
+            <input type="checkbox" id="shuffle" class="controlPanel">
+          </div>
+      
+          <div class="settingRow">
+            <button id="startBtn" onclick="startGame()">Start</button>
+            <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+          </div>
+        </div>
+      </div>
+
+
+    <div id="gameContainer" class="center">
+      <div id="uiContainer" class="">
+          <div id="strikes">
+          </div>
+
+          <div id="timer">
+          </div>
+
+          <div id="score" class="hidden">
+          </div>
+      </div>
+      
+      <div id="gameButtonArea" class="center" style="">
+      </div>
+      
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>

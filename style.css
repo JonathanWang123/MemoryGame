@@ -1,0 +1,248 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: slategrey;
+  color: white;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.settingRow {
+  margin: 5px;
+  padding: 5px;
+}
+
+.settingItem {
+  padding: 5px;
+  margin: 5px;
+  float: left;
+}
+
+.center {
+  margin: auto;
+  width: 35%;
+}
+
+.centerSettings {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.centerText {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.centerGame {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#gameButtonArea {
+  width: 35vw;
+  height: 35vw;
+}
+
+#gameButtonArea > button {
+  width: 48%;
+  height: 48%;
+  margin: 1%;
+}
+
+.hidden {
+  display: none;
+}
+
+#strikes {
+  margin: 5px;
+  width: 15vh;
+  height: 5vh;
+}
+
+#timer {
+  margin: 5px;
+  border: 2px solid black;
+  width: 35vw;
+  height: 5vh;
+  background-color: white;
+}
+.timerElement {
+  position: relative;
+  width: 1%;
+  height: 90%;
+  background-color: red;
+  float: left;
+  top: 5%;
+}
+
+#button1 {
+  background: #abf09d;
+}
+#button1:active,
+#button1.lit {
+  background: #008000;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button2 {
+  background: #55acfd;
+}
+#button2:active,
+#button2.lit {
+  background: blue;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button3 {
+  background: #ff9897;
+}
+#button3:active,
+#button3.lit {
+  background: red;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button4 {
+  background: #fafaab;
+}
+#button4:active,
+#button4.lit {
+  background: #fff500;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button5 {
+  background: #ca96fd;
+}
+#button5:active,
+#button5.lit {
+  background: purple;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button6 {
+  background: #f8c794;
+}
+#button6:active,
+#button6.lit {
+  background: orange;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button7 {
+  background: #fa9cfa;
+}
+#button7:active,
+#button7.lit {
+  background: magenta;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button8 {
+  background: #c9ffff;
+}
+#button8:active,
+#button8.lit {
+  background: cyan;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button9 {
+  background: #86FFDB;
+}
+#button9:active,
+#button9.lit {
+  background: #00C78C;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button10 {
+  background: #FF77FF;
+}
+#button10:active,
+#button10.lit {
+  background: #990099;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button11 {
+  background: #EA9090;
+}
+#button11:active,
+#button11.lit {
+  background: #8B1A1A;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button12 {
+  background: #FFDBA5;
+}
+#button12:active,
+#button12.lit {
+  background: #FFA824;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button13 {
+  background: #E4FFAE;
+}
+#button13:active,
+#button13.lit {
+  background: #C0FF3E;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button14 {
+  background: #AD99FF;
+}
+#button14:active,
+#button14.lit {
+  background: #3300FF;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button15 {
+  background: #66FFB2;
+}
+#button15:active,
+#button15.lit {
+  background: #006633;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
+
+#button16 {
+  background: #71B3FF;
+}
+#button16:active,
+#button15.lit {
+  background: #003F87;
+  background-size: cover;
+  background-image: url("https://cdn.glitch.com/048acf4c-8575-4416-a5ca-7a61bb4f3ffc%2Fhand.png?v=1616555813497");
+}
